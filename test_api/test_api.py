@@ -1,7 +1,11 @@
 import unittest
 import requests
 
+<<<<<<< HEAD
 class TestUsers(unittest.TestCase):
+=======
+class Test_users(unittest.TestCase):
+>>>>>>> fb34b3aabdfcb8b2e5cf23cf51d1c2cee40506c8
     def setUp(self):
         self.url = 'https://reqres.in/'
 
@@ -26,6 +30,7 @@ class TestUsers(unittest.TestCase):
 
         expected_response_body = {}
         self.assertDictEqual(self.response.json(), expected_response_body)
+<<<<<<< HEAD
 
 
 class TestPages(unittest.TestCase):
@@ -163,3 +168,5 @@ class TestRegLog(unittest.TestCase):
         }
 
         self.assertDictEqual(self.response.json(), expected_response_data)
+=======
+>>>>>>> fb34b3aabdfcb8b2e5cf23cf51d1c2cee40506c8
